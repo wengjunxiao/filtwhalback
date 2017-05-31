@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en" id="ng-app" data-framework="angularjs">
     <common-header></common-header>
-    <div ng-init="items={{json_encode($items)}}; style="margin:40px">
     <body style="margin-top:60px">
       <div class="container">
 
@@ -16,15 +15,17 @@
             </tr>
             </thead>
             <tbody >
-              <tr ng-repeat="item in items track by $index" ng-if="$index >= pagination.page * pagination.perPage && $index <= pagination.page * pagination.perPage + pagination.perPage">
+             @foreach ($items as $item)
+              <tr>
 
-                    <td>@{{ item.id }} </td>     
-                    <td>@{{ item.name }} </td>                              
-                    <td>@{{ item.name }} </td>
-                    <td>@{{ item.created_at }} </td>
-                    <td>@{{ item.created_at }} </td>
+                    <td>{{ item.id }} </td>     
+                    <td>{{ item.name }} </td>                              
+                    <td>{{ item.email }} </td>
+                    <td>{{ item.created_at }} </td>
+                    <td>{{ item.created_at }} </td>
                     <td><button ng-click="">delete</button></td>    
                 <tr>
+                @endforeach
             </tbody>
         </table>
         <common-footer></common-footer>
