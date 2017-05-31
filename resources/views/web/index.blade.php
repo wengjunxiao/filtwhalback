@@ -16,13 +16,12 @@
             </thead>
             <tbody >
              @foreach ($items as $item)
-              <tr>
-
-                    <td>{{ item['id'] }} </td>     
-                    <td>{{ item['name'] }} </td>                              
-                    <td>{{ item['email'] }} </td>
-                    <td>{{ item['created_at'] }} </td>
-                    <td>{{ item['update_at'] }} </td>
+              <tr>  
+                    <td>{{ $item['id'] }} </td>     
+                    <td>{{ $item['name'] }} </td>                              
+                    <td>{{ $item['email'] }} </td>
+                    <td>{{ $item['created_at'] }} </td>
+                    <td>{{ $item['update_at'] }} </td>
                     <td><button ng-click="">delete</button></td>    
                 <tr>
                 @endforeach
