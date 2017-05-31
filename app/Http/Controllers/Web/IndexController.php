@@ -13,7 +13,7 @@ class IndexController extends Controller
     public function index()
     {
     	$users = User::all();
-        return view('web.index')->withItems($lstItems);;
+        return view('web.index')->withItems($users);;
     }
 
 }
