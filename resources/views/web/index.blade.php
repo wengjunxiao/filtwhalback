@@ -5,15 +5,14 @@
       <div class="container">
 
           <table class="table" >  
-            <thead>
             <tr> 
                 <th>id</th>
                 <th>name</th>
                 <th>email</th>
                 <th>created_at</th>
                 <th>update_at</th>
+                <th></th>
             </tr>
-            </thead>
             <tbody >
              @foreach ($items as $item)
               <tr>  
