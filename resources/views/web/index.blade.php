@@ -4,7 +4,7 @@
     <body style="margin-top:60px">
       <div class="container">
 
-          <table class="table" >  
+          <table class="table" border="1" >  
             <tr> 
                 <th>id</th>
                 <th>name</th>
