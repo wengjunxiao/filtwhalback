@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Web; 
 use App\Http\Controllers\Controller;
 use App\User;
+use App\Need;
 
 
 class IndexController extends Controller
