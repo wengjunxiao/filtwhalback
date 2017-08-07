@@ -3,6 +3,7 @@
     <common-header></common-header>
     <body style="margin-top:60px">
       <div class="container">
+
     <ul class ="nolist-ul">
         <li ><a style="color: black" href="{{ url('/') }}" TARGET="_self">User</a></li>
         <li><a style="color: black" href="{{ url('/need') }}" TARGET="_self">Needs</a></li>
@@ -12,6 +13,9 @@
                 <th>id</th>
                 <th>name</th>
                 <th>email</th>
+                <th>company</th>
+                <th>question_div</th>
+                <th>question</th>
                 <th>created_at</th>
                 <th>update_at</th>
                 <th></th>
@@ -21,7 +25,10 @@
               <tr>  
                     <td>{{ $item['id'] }} </td>     
                     <td>{{ $item['name'] }} </td>                              
-                    <td>{{ $item['email'] }} </td>
+                    <td>{{ $item['mail'] }} </td>
+                    <td>{{ $item['company'] }} </td>
+                    <td>{{ $item['question_div'] }} </td>
+                    <td>{{ $item['question'] }} </td>
                     <td>{{ $item['created_at'] }} </td>
                     <td>{{ $item['update_at'] }} </td>
                     <td><button ng-click="">delete</button></td>    

@@ -16,4 +16,11 @@ class IndexController extends Controller
         return view('web.index')->withItems($users);;
     }
 
+    public function need()
+    {
+    	$needs = Need::all();
+        return view('web.need')->withItems($needs);;
+    }
+
+
 }
