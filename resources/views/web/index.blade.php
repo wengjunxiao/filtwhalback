@@ -6,6 +6,8 @@
     <ul class ="nolist-ul">
         <li ><a style="color: black" href="{{ url('/') }}" TARGET="_self">User</a></li>
         <li><a style="color: black" href="{{ url('/need') }}" TARGET="_self">Needs</a></li>
+        <li><a style="color: black" href="{{ url('/contact') }}" TARGET="_self">Contacts</a></li>
+        <li><a style="color: black" href="{{ url('/designer') }}" TARGET="_self">Designers</a></li>
     </ul>
           <table class="table" border="1" >  
             <tr> 

@@ -27,4 +27,6 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 Route::group(['prefix' => '', 'namespace' => 'Web'], function () {
     Route::get('/', 'IndexController@index');
     Route::get('/need', 'IndexController@need');
+    Route::get('/contact', 'IndexController@contact');
+    Route::get('/designer', 'IndexController@designer');
 });

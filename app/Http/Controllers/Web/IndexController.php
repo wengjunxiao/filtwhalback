@@ -23,5 +23,19 @@ class IndexController extends Controller
         return view('web.need')->withItems($needs);;
     }
 
+        public function designer()
+    {
+        $needs = Designer::all();
+        return view('web.designer')->withItems($needs);;
+    }
+
+
+    public function contact()
+    {
+        $needs = Contact::all();
+        return view('web.contact')->withItems($needs);;
+    }
+
+
 
 }

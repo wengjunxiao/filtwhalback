@@ -15,9 +15,7 @@
                 <th>id</th>
                 <th>name</th>
                 <th>email</th>
-                <th>company</th>
-                <th>question_div</th>
-                <th>question</th>
+                <th>skill</th>
                 <th>created_at</th>
                 <th>update_at</th>
                 <th></th>
@@ -29,8 +27,7 @@
                     <td>{{ $item['name'] }} </td>                              
                     <td>{{ $item['mail'] }} </td>
                     <td>{{ $item['company'] }} </td>
-                    <td>{{ $item['question_div'] }} </td>
-                    <td>{{ $item['question'] }} </td>
+                    <td>{{ $item['skill'] }} </td>
                     <td>{{ $item['created_at'] }} </td>
                     <td>{{ $item['update_at'] }} </td>
                     <td><button ng-click="">delete</button></td>    
