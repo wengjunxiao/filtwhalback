@@ -4,7 +4,8 @@ namespace App\Http\Controllers\Web;
 use App\Http\Controllers\Controller;
 use App\User;
 use App\Need;
-
+use App\Designer;
+use App\Contact;
 
 class IndexController extends Controller
 {
